@@ -1,11 +1,11 @@
 # code your #position_taken? method here!
 def position_taken?(board, index)
-  #board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-  #if (board[index] == " " || board[index] == "" || board[index] == "nil")
-#  taken = nil
-  if (board[index] == " " || board[index] == "" || board[index] == nil)
-    taken = false
+  #  taken = nil
+  !if (board[index] == " " || board[index] == "" || board[index] == nil)
+    true
   else
-    taken = true
+    false
   end
+#  (board[index] == " " || board[index] == "" || board[index] == nil) ?
+#  false : true
 end

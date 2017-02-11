@@ -8,9 +8,7 @@ def position_taken?(board,index)
     return false
   elsif board[index] == "X"
     return true
-  elsif board[index] == "O"
+  else board[index] == "O"
     return true
-  else
-    return "not valid input"
   end
 end

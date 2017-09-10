@@ -10,3 +10,9 @@ def position_taken?(board, index)
       true
     end
 end
+
+
+board = [" "," "," ","X"," "," "," "," "," "]
+index = 3
+answer = position_taken?(board,index)
+puts answer

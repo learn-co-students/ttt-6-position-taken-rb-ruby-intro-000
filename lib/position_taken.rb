@@ -1,19 +1,11 @@
 
 # code your #position_taken? method here!
-board = []
-
-input = gets.strip
-
-def input_to_index(index)
-  index.to_i-1
-end
-
-index =input_to_index(input)
+board = ["X", " ", " "]
 
 def position_taken?(board,index)
-  if board[index] == " "
+  if board[index] == " " || board[index] == "" || board[index] == nil
     return false
+  elsif board[index] == "X" || board[index] == "O"
+    return true
   end
 end
-
-position_taken?(board,index)

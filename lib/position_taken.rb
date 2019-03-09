@@ -5,9 +5,9 @@ def convert_to_board_position(user_position)
 end
 # code your #position_taken? method here!
 def position_taken?(board, index)
-  if board[index] == " "|""|nil
+  if board[index] == " "|| board[index] == ""|| board[index] == nil
     return false
-  elsif board[index] == "X"|"O"
+  elsif board[index] == "X"|| board[index] == "O"
     return true
   end
 end

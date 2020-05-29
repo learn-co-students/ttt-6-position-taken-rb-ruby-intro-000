@@ -1,1 +1,5 @@
-# code your #position_taken? method here!
+require_relative '../lib/xo'
+
+puts "Lets play XO"
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+play(board)

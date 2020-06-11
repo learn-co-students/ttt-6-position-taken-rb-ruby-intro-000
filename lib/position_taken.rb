@@ -17,12 +17,11 @@ return board[index] = player
 end
 
 def position_taken?(board, index)
-  if board[index] = ["", "", "", "", "", "", "", "", ""] &&
-    false
-  elsif  board[index] = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-    false
-  elsif board[index] = ["X || O", "X || O", "X || O", "X || O", "X || O", "X || O", "X || O", "X || O", "X || O", ]
+  if board[index] == "X" || board[index] == "O"
     true
-  else nil
+  elsif board[index] == " "
+    false
+  else board[index] == ""
+    false
   end
 end
